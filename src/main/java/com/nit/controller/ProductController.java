@@ -26,7 +26,7 @@ public class ProductController {
 	
 	@RequestMapping(value="/",method = RequestMethod.GET)
 	public String indexPage(Model model) {
-		model.addAttribute("command", new Product());
+		model.addAttribute("student", new Product());
 		return "index";
 	}
 	
@@ -51,7 +51,7 @@ public class ProductController {
 	@RequestMapping(value="/delete/{id}",method = RequestMethod.GET)
 	public String deleteProduct(@PathVariable("id") int id) {
 		this.productRepository.deleteProduct(id);
-		 return "./display";
+		 return "./home";
 		 
 	}
 }

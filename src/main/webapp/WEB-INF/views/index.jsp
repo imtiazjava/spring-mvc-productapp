@@ -3,7 +3,7 @@
 <body>
 <h2>WELCOME TO HOME PAGE</h2>
 <hr/>
-<form:form action="store" method="post" modelAttribute="command">
+<form:form action="store" method="post" modelAttribute="student">
  <table>
  		<tr>
  			<td>PRODUCT ID:</td>
